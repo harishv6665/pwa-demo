@@ -1,11 +1,11 @@
 const cacheName = 'shell-content';
 const filesToCache = [
-    './images/pwa.png',
-    './images/pwa-engaging.png',
-    './images/pwa-fast.png',
-    './images/pwa-reliable.png',
-    './images/icons/pwa-192.192.png',
-    './images/icons/pwa-512.512.png',
+    '/images/pwa.png',
+    '/images/pwa-engaging.png',
+    '/images/pwa-fast.png',
+    '/images/pwa-reliable.png',
+    '/images/icons/pwa-192.192.png',
+    '/images/icons/pwa-512.512.png',
 
     '/css/styles.css',
 
