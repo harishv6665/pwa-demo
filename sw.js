@@ -1,24 +1,25 @@
-const cacheName = 'shell-content';
-const filesToCache = [
-    '/images/pwa.png',
-    '/images/pwa-engaging.png',
-    '/images/pwa-fast.png',
-    '/images/pwa-reliable.png',
-    '/images/icons/pwa-192.192.png',
-    '/images/icons/pwa-512.512.png',
-
-    '/css/styles.css',
-
-    '/index.html',
-    '/'
-];
-
 self.addEventListener('install', function(e) {
-    console.log('[ServiceWorker] Install');
-    e.waitUntil(
-        caches.open(cacheName).then(function(cache) {
-            console.log('[ServiceWorker] Caching app shell');
-            return cache.addAll(filesToCache);
-        })
-    );
+ e.waitUntil(
+   caches.open('video-store').then(function(cache) {
+     return cache.addAll([
+       '/pwa-examples/a2hs/',
+       '/pwa-examples/a2hs/index.html',
+       '/pwa-examples/a2hs/index.js',
+       '/pwa-examples/a2hs/style.css',
+       '/pwa-examples/a2hs/images/fox1.jpg',
+       '/pwa-examples/a2hs/images/fox2.jpg',
+       '/pwa-examples/a2hs/images/fox3.jpg',
+       '/pwa-examples/a2hs/images/fox4.jpg'
+     ]);
+   })
+ );
+});
+
+self.addEventListener('fetch', function(e) {
+  console.log(e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
+  );
 });
