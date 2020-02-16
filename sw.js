@@ -10,6 +10,7 @@ const filesToCache = [
     '/css/styles.css',
 
     '/index.html',
+    '/'
 ];
 
 self.addEventListener('install', function(e) {
