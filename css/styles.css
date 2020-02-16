@@ -17,9 +17,23 @@ ul {
     list-style: none;
 }
 
+.header {
+    height: 50px;
+    background: #5a0ec8;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .banner {
     height: 300px;
-    background: url(./../images/pwa.png) no-repeat center center;
+    background: url(../images/pwa.png) no-repeat center center;
     background-size: contain;
     margin: 50px;
 }
@@ -51,15 +65,15 @@ ul {
 }
 
 .list__item__banner--engage {
-    background-image: url('./../images/pwa-engaging.png');
+    background-image: url('../images/pwa-engaging.png');
 }
 
 .list__item__banner--fast {
-    background-image: url('./../images/pwa-fast.png');
+    background-image: url('../images/pwa-fast.png');
 }
 
 .list__item__banner--reliable {
-    background-image: url('./../images/pwa-reliable.png');
+    background-image: url('../images/pwa-reliable.png');
 }
 
 .list__item__title {

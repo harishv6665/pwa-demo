@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="manifest" href="./manifest.json">
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__title">App Shell</h1>
+    </header>
     <div class="banner"></div>
     <h1 class="heading">Welcome to Progressive web application</h1>
 
@@ -28,5 +31,16 @@
             <h3 class="list__item__title">ITS RELIABLE</h3>
         </li>
     </ul>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/scripts/sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }).catch(function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
