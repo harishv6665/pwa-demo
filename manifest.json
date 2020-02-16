@@ -1,0 +1,40 @@
+{
+  "name": "PWA Demo",
+  "short-name": "PWA Demo",
+  "start-url": "./index.html",
+  "display": "standalone",
+  "background-color": "#5a0fc8",
+  "theme-color": "#5a0fc8",
+  "icons": [
+    {
+      "src": "./images/icons/pwa-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "./images/icons/pwa-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "./images/icons/pwa-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./images/icons/pwa-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "./images/icons/pwa-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/icons/pwa-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

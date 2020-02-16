@@ -12,3 +12,58 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+ul {
+    list-style: none;
+}
+
+.banner {
+    height: 300px;
+    background: url(./../images/pwa.png) no-repeat center center;
+    background-size: contain;
+    margin: 50px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    color: #3d3d3d;
+}
+
+.list {
+    display: flex;
+    height: 250px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+.list__item {
+    width: 250px;
+    height: 100%;
+}
+
+.list__item__banner {
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.list__item__banner--engage {
+    background-image: url('./../images/pwa-engaging.png');
+}
+
+.list__item__banner--fast {
+    background-image: url('./../images/pwa-fast.png');
+}
+
+.list__item__banner--reliable {
+    background-image: url('./../images/pwa-reliable.png');
+}
+
+.list__item__title {
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+}
